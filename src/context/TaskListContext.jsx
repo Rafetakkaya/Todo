@@ -9,7 +9,7 @@ const TaskListContextProvider = props => {
     const [tasks,setTasks]=useState(
        initialState
     )
-    const [editItem,setEditItem]=useState(null)//useState yi null da yapabiliriz
+    const [editItem,setEditItem]=useState(null)
     useEffect(()=>{
         localStorage.setItem("tasks",JSON.stringify(tasks))
     },[tasks])
